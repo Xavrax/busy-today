@@ -26,10 +26,14 @@ script to build whole system with docker images.
 
 ## Deployment
 
-You can deploy everything build in previous step using `deploy.sh` script.
+It is possible deploy everything built in previous step using `deploy.sh` script.
 It runs services with their default configuration. 
 You can edit `.yaml` files in `k8s/` directory to configure them as you need. 
 
 Additionally, you can deploy only services that you need and swap
 the rest as you want. All requirements about API are located in concrete
 service directory.
+
+## Communication
+
+To communicate with the system it is necessary to use it's [open API]() on gate service.
