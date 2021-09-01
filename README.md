@@ -1,6 +1,8 @@
 # :warning: Work in progress! :warning:
 # Busy-Today
 
+![build](https://github.com/Xavrax/busy-today/blob/main/.github/workflows/rust.yml/badge.svg)
+
 ## What is it?
 
 **Busy-Today** is a simple scheduling assistant backend that helps you
