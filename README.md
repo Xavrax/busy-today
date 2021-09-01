@@ -36,4 +36,4 @@ service directory.
 
 ## Communication
 
-To communicate with the system it is necessary to use it's [open API](open_api.yaml) on [gate service](crates/gate).
+To communicate with the system it is necessary to use it's [open API](crates/gate/open_api.yaml) on [gate service](crates/gate).
