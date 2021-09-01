@@ -1,7 +1,8 @@
 # :warning: Work in progress! :warning:
 # Busy-Today
 
-![build](https://github.com/Xavrax/busy-today/actions/workflows/rust.yml/badge.svg)
+![Rust](https://github.com/Xavrax/busy-today/actions/workflows/rust.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## What is it?
 
