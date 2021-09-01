@@ -1,15 +1,64 @@
 openapi: 3.0.1
 info:
-  title: Sample API
-  description: API description in Markdown.
+  title: Busy-Today API
+  description: API description for Busy-Today backend gate.
   version: 1.0.0
-servers:
-  - url: 'https://api.example.com'
 paths:
-  /users:
+  /days:
     get:
-      summary: Returns a list of users.
-      description: Optional extended description in Markdown.
+      summary: List of stored days.
+      description: Returns a list of stored days with people's declarations.
       responses:
-        '200':
+        "200":
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DaysResponse"
+              examples:
+                example:
+                  $ref: "#/components/examples/DaysResponseExample"
+components:
+  schemas:
+    DaysResponse:
+      type: object
+      required:
+        - days
+      properties:
+        days:
+          type: array
+          items:
+            $ref: "#/components/schemas/Day"
+    Day:
+      type: object
+      required:
+        - date
+      properties:
+        date:
+          type: string
+          format: date-time
+        people:
+          type: array
+          items:
+            $ref: "#/components/schemas/Person"
+    Person:
+      type: object
+      required:
+        - name
+        - declaration
+      properties:
+        name:
+          type: string
+        declaration:
+          type: string # todo: declaration enum/string/etc?
+  examples:
+    DaysResponseExample:
+      value:
+        days:
+          - date: "2021-08-29T00:00:00Z"
+            people:
+              - name: "Xavrax"
+                declaration: "free"
+              - name: "Other"
+                declaration: "busy"
+          - date: "2021-08-30T00:00:00Z"
