@@ -17,10 +17,10 @@ impl World for ScenarioEnvironment {
 }
 
 #[given(regex = "configured (.*) endpoint")]
-async fn configure_endpoint(env: &mut ScenarioEnvironment, endpoint: String) {}
+async fn configure_endpoint(_env: &mut ScenarioEnvironment, _endpoint: String) {}
 
 #[when("request is sent")]
-async fn send_request(env: &mut ScenarioEnvironment) {}
+async fn send_request(_env: &mut ScenarioEnvironment) {}
 
 #[then("response is valid")]
-fn check_request(env: &mut ScenarioEnvironment) {}
+fn check_request(_env: &mut ScenarioEnvironment) {}
