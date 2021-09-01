@@ -1,7 +1,7 @@
 # :warning: Work in progress! :warning:
 # Busy-Today
 
-![build](https://github.com/Xavrax/busy-today/blob/main/.github/workflows/rust.yml/badge.svg)
+![build](https://github.com/Xavrax/busy-today/actions/workflows/rust.yml/badge.svg)
 
 ## What is it?
 
