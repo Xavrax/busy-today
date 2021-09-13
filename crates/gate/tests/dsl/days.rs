@@ -1,6 +1,9 @@
 use crate::dsl::ScenarioEnvironment;
 use cucumber_rust::{given, then};
 
+#[given("valid_request")]
+fn generate_valid_request(_env: &mut ScenarioEnvironment) {}
+
 #[given("mocked storage provider with empty store")]
 fn create_storage_provider_with_empty_store(_env: &mut ScenarioEnvironment) {}
 
