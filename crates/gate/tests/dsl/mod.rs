@@ -1,4 +1,4 @@
-use anyhow::{anyhow, Result};
+use anyhow::Result;
 use cucumber_rust::{async_trait, World, WorldInit};
 use cucumber_rust::{given, then, when};
 use reqwest::{Response, StatusCode, Url};
