@@ -20,11 +20,11 @@ Architecture of system is presented at diagram below:
 Simple services implemented in this project:
  - Gate - simple gateway for system
  - Authenticator - **todo: security**
- - Database Injector - service that writes in to database
+ - Database Injector - service that writes into database
  - Database Reader - service that reads from database
 
 Other services or systems:
- - Event Streaming Platform - Apache Kafka used for handling events from gate
+ - Event Streaming Platform - Apache Kafka, used for handling events from gate
  - Database - Default filesystem with files
 
 ## Requirements
