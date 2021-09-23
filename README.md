@@ -11,6 +11,22 @@ meet up with friends by declaring if a day is busy for someone or not.
 It provides few microservices that communicate with each other that can be
 deployed at Kubernetes cluster. Users can interact with system using REST API.
 
+## Quick overview
+
+Architecture of system is presented at diagram below:
+
+![busy today overview](busy-today-overview.png)
+
+Simple services implemented in this project:
+ - Gate - simple gateway for system
+ - Authenticator - **todo: security**
+ - Database Injector - service that writes in to database
+ - Database Reader - service that reads from database
+
+Other services or systems:
+ - Event Streaming Platform - Apache Kafka used for handling events from gate
+ - Database - Default filesystem with files
+
 ## Requirements
 
 All you need to play with this repository:
